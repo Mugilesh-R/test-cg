@@ -1191,3 +1191,77 @@ figcaption {
         height: 200px;
     }
 }
+.export-cta {
+    background: linear-gradient(135deg, #91d2ed, #203a43, #2c5364);
+    padding: 70px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.export-cta-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.export-cta h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.export-cta p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e0e0e0;
+    margin-bottom: 35px;
+}
+
+.export-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #2c5364;
+}
+
+.btn-primary:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #2c5364;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .export-cta h2 {
+        font-size: 26px;
+    }
+
+    .export-cta p {
+        font-size: 16px;
+    }
+}

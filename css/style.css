@@ -454,7 +454,7 @@ figcaption {
     padding: 0 20px;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 60px;
+    gap: 10px;
 }
 
 /* ABOUT */
@@ -476,6 +476,7 @@ figcaption {
 /* SOCIAL */
 .footer-social {
     margin-top: 20px;
+    margin-right: 0;
 }
 
 .footer-social a {

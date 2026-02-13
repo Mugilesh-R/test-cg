@@ -32,6 +32,17 @@ function toggleFaq(el) {
     el.parentElement.classList.toggle("active");
 }
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+    });
+});
+</script>
+
 
 <body>
 
@@ -42,8 +53,10 @@ function toggleFaq(el) {
             <img src="images/logo.png" alt="Serevia Export & Import Logo">
             <span>Serevia Export & Import</span>
         </div>
-
-        <ul class="nav-menu">
+        <div class="menu-toggle" id="menuToggle">
+        ☰
+    </div>
+        <ul class="nav-menu" id="navMenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
@@ -313,7 +326,7 @@ function toggleFaq(el) {
 
         <!-- MIDDLE: QUICK LINKS -->
         <div class="footer-links">
-            <h3>Quick Links</h3>
+            <h3 style="padding-left: 35px;">Quick Links</h3>
             
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -326,7 +339,7 @@ function toggleFaq(el) {
         <!-- RIGHT: IMPORTANT LINKS -->
         <div class="footer-links">
             <h3>Important Links</h3>
-            <ul>
+            <ul style="padding-left: 35px;">
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
                 <li><a href="#">Disclaimer</a></li>
@@ -339,15 +352,15 @@ function toggleFaq(el) {
     <!-- CONTACT STRIP -->
     <div class="footer-contact">
         Contact Us:
-        <a href="mailto:info@sereviaexports.com">info@sereviaexports.com</a> |
+        <a href="mailto:sereviaexim@gmail.com">sereviaexim@gmail.com</a> |
         Phone:
-        <a href="tel:+917667924881">+91 76679 24881</a> |
-        <a href="tel:+919361061592">+91 93610 61592</a>
+        <a href="tel:+91 6383859191">+91 63838 59191</a> |
+        <a href="tel:+91 9384440482">+91 93844 40482</a>
     </div>
 
     <!-- COPYRIGHT -->
     <div class="footer-bottom">
-        © 2025 Serevia Export & Import. All Rights Reserved.
+        © 2026 Serevia Export & Import. All Rights Reserved.
     </div>
 </footer>
 
@@ -359,7 +372,7 @@ function toggleFaq(el) {
 </button>
 
 <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/917667924881" 
+<a href="https://wa.me/916383859191" 
    class="whatsapp-float" 
    target="_blank"
    aria-label="Chat on WhatsApp">

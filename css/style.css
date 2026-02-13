@@ -1294,3 +1294,53 @@ figcaption {
         margin-bottom: 15px;
     }
 }
+/* NAVBAR */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Menu default (desktop) */
+.nav-menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+/* Hamburger hidden on desktop */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+        z-index: 999;
+    }
+
+    .nav-menu li {
+        margin: 12px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}

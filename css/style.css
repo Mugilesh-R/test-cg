@@ -193,25 +193,73 @@ hr {
 /* =====================================================
    HERO (INDEX)
 ===================================================== */
-.hero {
-    min-height: 100vh;
-    background: #0b0b0b;
-    color: #f5f3ee;
-    display: flex;
-    align-items: center;
-    animation: fadeIn 1.2s ease forwards;
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.hero h1 {
-    color: #d4af37;
-    font-size: 56px;
+/* VIDEO */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
 }
 
-.hero p {
-    color: #ddd;
-    font-size: 18px;
-    max-width: 650px;
+/* DARK OVERLAY (80%) */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
+
+/* CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 850px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    height: 80vh;
+  }
+}
+
 
 /* =====================================================
    DARK SECTIONS

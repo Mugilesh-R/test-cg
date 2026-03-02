@@ -14,5 +14,3 @@ A premium static website for **Serevia Export & Import**, showcasing coconut and
 - Present export-grade products professionally
 - Build trust with international buyers
 - Generate quality export inquiries
-
-## 📁 Folder Structure
